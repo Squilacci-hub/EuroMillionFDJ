@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroMillions - Générateur de Numéros</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">EuroMillions</h1>
+            <p class="subtitle">Générateur de Numéros de Chance</p>
+        </header>
+
+        <nav class="nav-buttons">
+            <a href="euromillions.html" class="nav-btn active">EuroMillions</a>
+            <a href="loto.html" class="nav-btn">Loto National</a>
+            <a href="index.html" class="nav-btn home-btn">◀ Accueil</a>
+        </nav>
+
+        <main class="main-content">
+            <div class="numbers-display">
+                <div class="numbers-container">
+                    <div class="number-slot" id="number1">-</div>
+                    <div class="number-slot" id="number2">-</div>
+                    <div class="number-slot" id="number3">-</div>
+                    <div class="number-slot" id="number4">-</div>
+                    <div class="number-slot" id="number5">-</div>
+                </div>
+                
+                <div class="stars-container">
+                    <div class="star-slot" id="star1">★</div>
+                    <div class="star-slot" id="star2">★</div>
+                </div>
+            </div>
+
+            <button class="generate-btn" id="generateBtn">
+                <span>Générer mes numéros</span>
+            </button>
+
+            <div class="info-section">
+                <p class="info-text">5 numéros de 1 à 50 et 2 étoiles de 1 à 12</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 EuroMillions Generator - Jouez responsablement</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

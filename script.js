@@ -68,8 +68,7 @@ class EuroMillionsGenerator {
         const rollInterval = setInterval(() => {
             // Afficher des numéros aléatoires pendant l'animation
             this.numberSlots.forEach((slot, index) => {
-                const valueSpan = slot.querySelector('.number-value');
-                valueSpan.textContent = Math.floor(Math.random() * 50) + 1;
+                slot.textContent = Math.floor(Math.random() * 50) + 1;
             });
             
             this.starSlots.forEach((slot, index) => {
@@ -91,10 +90,8 @@ class EuroMillionsGenerator {
         // Afficher les numéros un par un avec un délai
         numbers.forEach((num, index) => {
             setTimeout(() => {
-                const slot = this.numberSlots[index];
-                const valueSpan = slot.querySelector('.number-value');
-                valueSpan.textContent = num;
-                slot.classList.add('generated');
+                this.numberSlots[index].textContent = num;
+                this.numberSlots[index].classList.add('generated');
                 
                 // Effet sonore simulé
                 this.playSound(800 + index * 100);
@@ -104,9 +101,8 @@ class EuroMillionsGenerator {
         // Afficher les étoiles avec un délai supplémentaire
         stars.forEach((star, index) => {
             setTimeout(() => {
-                const slot = this.starSlots[index];
-                slot.textContent = star;
-                slot.classList.add('generated');
+                this.starSlots[index].textContent = star;
+                this.starSlots[index].classList.add('generated');
                 
                 // Effet sonore différent pour les étoiles
                 this.playSound(1200 + index * 200);
