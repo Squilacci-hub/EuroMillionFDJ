@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto National - Générateur de Numéros</title>
+    <link rel="stylesheet" href="loto-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-fdj">
+                <div class="fdj-text">FDJ</div>
+                <div class="loto-text">LOTO</div>
+            </div>
+            <h1 class="title">Générateur Loto National</h1>
+            <div class="jackpot-info">
+                <span class="jackpot-label">JACKPOT</span>
+                <span class="jackpot-amount">2 000 000 €</span>
+            </div>
+        </header>
+
+        <nav class="nav-buttons">
+            <a href="index.html" class="nav-btn">EuroMillions</a>
+            <a href="loto.html" class="nav-btn active">Loto National</a>
+            <a href="home.html" class="nav-btn home-btn">🏠 Accueil</a>
+        </nav>
+
+        <main class="main-content">
+            <div class="numbers-display">
+                <div class="section-label">Vos numéros</div>
+                <div class="numbers-container">
+                    <div class="number-slot" id="loto-number1">?</div>
+                    <div class="number-slot" id="loto-number2">?</div>
+                    <div class="number-slot" id="loto-number3">?</div>
+                    <div class="number-slot" id="loto-number4">?</div>
+                    <div class="number-slot" id="loto-number5">?</div>
+                </div>
+                
+                <div class="section-label chance-label">Numéro Chance</div>
+                <div class="chance-container">
+                    <div class="chance-slot" id="loto-chance">?</div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button class="generate-btn" id="loto-generateBtn">
+                    <span class="btn-text">GÉNÉRER MES NUMÉROS</span>
+                    <span class="btn-icon">🎰</span>
+                </button>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-label">Numéros principaux</span>
+                    <span class="stat-value">5 numéros de 1 à 49</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Numéro Chance</span>
+                    <span class="stat-value">1 numéro de 1 à 10</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Probabilité</span>
+                    <span class="stat-value">1 chance sur 19 068 840</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Loto National Generator - Jouez responsablement</p>
+                <p>Âge minimum : 18 ans - Interdit aux mineurs</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="loto-script.js"></script>
+</body>
+</html>

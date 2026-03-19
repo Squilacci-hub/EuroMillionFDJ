@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroMillions - Générateur de Numéros</title>
+    <link rel="stylesheet" href="style-new.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i class="bi bi-stars"></i>
+                    <h1 class="title">EuroMillions</h1>
+                </div>
+                <p class="subtitle">Générateur de Numéros de Chance</p>
+            </div>
+        </header>
+
+        <nav class="nav-buttons">
+            <a href="index.html" class="nav-btn active">
+                <i class="bi bi-stars"></i>
+                <span>EuroMillions</span>
+            </a>
+            <a href="loto.html" class="nav-btn">
+                <i class="bi bi-circle"></i>
+                <span>Loto National</span>
+            </a>
+            <a href="home.html" class="nav-btn home-btn">
+                <i class="bi bi-house"></i>
+                <span>Accueil</span>
+            </a>
+        </nav>
+
+        <main class="main-content">
+            <div class="numbers-display">
+                <div class="numbers-container">
+                    <div class="number-slot" id="number1">
+                        <span class="number-value">-</span>
+                    </div>
+                    <div class="number-slot" id="number2">
+                        <span class="number-value">-</span>
+                    </div>
+                    <div class="number-slot" id="number3">
+                        <span class="number-value">-</span>
+                    </div>
+                    <div class="number-slot" id="number4">
+                        <span class="number-value">-</span>
+                    </div>
+                    <div class="number-slot" id="number5">
+                        <span class="number-value">-</span>
+                    </div>
+                </div>
+                
+                <div class="stars-container">
+                    <div class="star-slot" id="star1">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="star-slot" id="star2">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button class="generate-btn" id="generateBtn">
+                <i class="bi bi-shuffle"></i>
+                <span>Générer mes numéros</span>
+            </button>
+
+            <div class="info-section">
+                <p class="info-text">5 numéros de 1 à 50 et 2 étoiles de 1 à 12</p>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-label">
+                        <i class="bi bi-hash"></i>
+                        Numéros principaux
+                    </span>
+                    <span class="stat-value">5 numéros de 1 à 50</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">
+                        <i class="bi bi-star"></i>
+                        Étoiles
+                    </span>
+                    <span class="stat-value">2 étoiles de 1 à 12</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">
+                        <i class="bi bi-trophy"></i>
+                        Probabilité Jackpot
+                    </span>
+                    <span class="stat-value">1/139 838 160</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 EuroMillions Generator - Jouez responsablement</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

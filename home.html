@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateurs de Jeux de Hasard - Accueil</title>
+    <link rel="stylesheet" href="home-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="main-logo">
+                        <i class="fas fa-dice"></i>
+                        <span class="logo-text">Générateurs FDJ</span>
+                    </div>
+                    <p class="tagline">Vos numéros de chance en un clic</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="hero-section">
+                <h1 class="hero-title">Bienvenue dans l'Univers des Jeux de Hasard</h1>
+                <p class="hero-subtitle">Choisissez votre jeu et générez vos combinaisons gagnantes</p>
+            </section>
+
+            <section class="games-grid">
+                <div class="game-card loto-card" onclick="location.href='loto.html'">
+                    <div class="card-header">
+                        <div class="game-icon">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h2 class="game-title">Loto National</h2>
+                        <div class="game-badge">FRANCE</div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="game-preview">
+                            <div class="preview-numbers">
+                                <div class="preview-number blue">8</div>
+                                <div class="preview-number blue">13</div>
+                                <div class="preview-number blue">18</div>
+                                <div class="preview-number blue">45</div>
+                                <div class="preview-number blue">48</div>
+                            </div>
+                            <div class="preview-chance">
+                                <div class="preview-number red">7</div>
+                                <span class="chance-label">Chance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="game-info">
+                            <div class="info-item">
+                                <i class="fas fa-hashtag"></i>
+                                <span>5 numéros (1-49)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <span>1 numéro chance (1-10)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Jackpot: 2M€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="play-btn">
+                            <span>Jouer au Loto</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card euromillions-card" onclick="location.href='index.html'">
+                    <div class="card-header">
+                        <div class="game-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h2 class="game-title">EuroMillions</h2>
+                        <div class="game-badge">EUROPE</div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="game-preview">
+                            <div class="preview-numbers">
+                                <div class="preview-number yellow">5</div>
+                                <div class="preview-number yellow">12</div>
+                                <div class="preview-number yellow">23</div>
+                                <div class="preview-number yellow">34</div>
+                                <div class="preview-number yellow">47</div>
+                            </div>
+                            <div class="preview-stars">
+                                <div class="preview-star">★</div>
+                                <div class="preview-star">★</div>
+                                <span class="stars-label">Étoiles</span>
+                            </div>
+                        </div>
+                        
+                        <div class="game-info">
+                            <div class="info-item">
+                                <i class="fas fa-hashtag"></i>
+                                <span>5 numéros (1-50)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <span>2 étoiles (1-12)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Jackpot: 130M€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="play-btn">
+                            <span>Jouer à EuroMillions</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2 class="features-title">Pourquoi nos générateurs ?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-random"></i>
+                        </div>
+                        <h3>Génération Aléatoire</h3>
+                        <p>Algorithmes certifiés pour des tirages vraiment aléatoires</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Design Officiel</h3>
+                        <p>Interface fidèle aux jeux FDJ avec animations immersive</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>100% Responsive</h3>
+                        <p>Fonctionne parfaitement sur mobile, tablette et desktop</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Instantané</h3>
+                        <p>Génération immédiate de vos numéros de chance</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">19M</div>
+                        <div class="stat-label">Combinaisons Loto</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">139M</div>
+                        <div class="stat-label">Combinaisons EuroMillions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Gratuit</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Disponible</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Jeux Disponibles</h4>
+                    <ul>
+                        <li><a href="loto.html">Loto National</a></li>
+                        <li><a href="index.html">EuroMillions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#" onclick="showResponsibility(); return false;">Jeu Responsable</a></li>
+                        <li><a href="#" onclick="showProbabilities(); return false;">Probabilités</a></li>
+                        <li><a href="#" onclick="showAbout(); return false;">À Propos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Générateurs FDJ</p>
+                    <p>Service gratuit et sans engagement</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Générateurs FDJ - Jouez responsablement - Âge minimum 18 ans</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal pour informations -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Information</h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="home-script.js"></script>
+</body>
+</html>
